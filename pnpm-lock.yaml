@@ -31,7 +31,7 @@ importers:
         version: 3.6.0-beta.17(typescript@6.0.3)
       vue-router:
         specifier: ^5.1.0
-        version: 5.1.0(rolldown@1.1.5)(vite@8.1.4(@types/node@24.13.3)(jiti@2.7.0)(yaml@2.9.0))(vue@3.6.0-beta.17(typescript@6.0.3))
+        version: 5.1.0(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(vite@8.1.4(@types/node@24.13.3)(jiti@2.7.0)(yaml@2.9.0))(vue@3.6.0-beta.17(typescript@6.0.3))
     devDependencies:
       '@tsconfig/node24':
         specifier: ^24.0.4
@@ -840,6 +840,9 @@ packages:
 
   '@vue/compiler-dom@3.6.0-beta.17':
     resolution: {integrity: sha512-viCM7YwHK6HuQ9rY8O27ET1xLi9WeJ+EmMWlwvtggpqb2j+l7DZOATkCRXOivjTOqtt8h5MIGnlB7tQlupQgeA==}
+
+  '@vue/compiler-sfc@3.5.39':
+    resolution: {integrity: sha512-d0ki86iOyN8LoZPBmk5SJWNwHP19CnDDCfuo//+2WJa2g5Ke0Jay983PIBIcSSzldC68I8DrD5GrHV3OSDfodg==}
 
   '@vue/compiler-sfc@3.6.0-beta.17':
     resolution: {integrity: sha512-L3KGWeWDCqm1tL03m09IXKRhIEh0Ij2gEIax9W0smDtlCAQt4gc8dmeTbjTOg4+1N2qAFEaAs+0xVu9y1j7Sng==}
@@ -2645,6 +2648,19 @@ snapshots:
       '@vue/compiler-core': 3.6.0-beta.17
       '@vue/shared': 3.6.0-beta.17
 
+  '@vue/compiler-sfc@3.5.39':
+    dependencies:
+      '@babel/parser': 7.29.7
+      '@vue/compiler-core': 3.6.0-beta.17
+      '@vue/compiler-dom': 3.6.0-beta.17
+      '@vue/compiler-ssr': 3.6.0-beta.17
+      '@vue/shared': 3.6.0-beta.17
+      estree-walker: 2.0.2
+      magic-string: 0.30.21
+      postcss: 8.5.17
+      source-map-js: 1.2.1
+    optional: true
+
   '@vue/compiler-sfc@3.6.0-beta.17':
     dependencies:
       '@babel/parser': 7.29.7
@@ -3619,7 +3635,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  vue-router@5.1.0(rolldown@1.1.5)(vite@8.1.4(@types/node@24.13.3)(jiti@2.7.0)(yaml@2.9.0))(vue@3.6.0-beta.17(typescript@6.0.3)):
+  vue-router@5.1.0(@vue/compiler-sfc@3.5.39)(rolldown@1.1.5)(vite@8.1.4(@types/node@24.13.3)(jiti@2.7.0)(yaml@2.9.0))(vue@3.6.0-beta.17(typescript@6.0.3)):
     dependencies:
       '@babel/generator': 8.0.0
       '@vue-macros/common': 3.1.2(vue@3.6.0-beta.17(typescript@6.0.3))
@@ -3640,6 +3656,7 @@ snapshots:
       vue: 3.6.0-beta.17(typescript@6.0.3)
       yaml: 2.9.0
     optionalDependencies:
+      '@vue/compiler-sfc': 3.5.39
       vite: 8.1.4(@types/node@24.13.3)(jiti@2.7.0)(yaml@2.9.0)
     transitivePeerDependencies:
       - '@farmfe/core'
