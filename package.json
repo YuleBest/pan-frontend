@@ -59,7 +59,9 @@
       "@vue/compat": "beta"
     },
     "peerDependencyRules": {
-      "allowAny": ["vue"]
+      "allowAny": [
+        "vue"
+      ]
     }
   }
 }
